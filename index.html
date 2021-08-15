@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:ital,wght@0,500;0,700;1,600&family=Ubuntu:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/5a75b55827.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--add a style in the style.css file for you nav element-->
+    <!--the nav element should appear at the top of the page, spanning the entire page width,
+        white background, 55px in height, a slight shadow at the bottom-->
+    <nav>
+      <!--add style for the ul and li elements. The list elements
+                should not have any dots, they should be block elements,
+                equal sized widths -->
+      <ul>
+        <!--When each of the menu items is clicked on, the relevant location should be scrolled to 
+                on the page-->
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#portfolio">My portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!--Define a .container class and style it appropriately 
+        the container class is goig to be used as a wrapper for all the content on our page-->
+    <div class="container">
+      <section id="headline">
+        <!--Define the .headline-img class to place some padding around your image-->
+        <div class="headline-img">
+          <!--Insert you headshot here. The .circle-img class has equal length and width
+                    and a border-radius set to make it look circular-->
+          <img src="images/jonelle.png" class="circle-img" />
+        </div>
+        <!--Insert a catchy blurb about yourself here. 
+                    Style it appropriately to have suitable font size and color-->
+        <div id="skills">
+          <div>Hi, I'm Jonelle</div>
+          <div>Software Engineering Student</div>
+        </div>
+      </section>
+      <!--include an about me section that has a brief descriptive
+            paragraph about yourself, and what skills you have-->
+      <section id="about-me">
+        <div class="about-text">
+          I am Customer Service Agent currently studing Software Engineering.<br />
+          When I am not working or studing I love:
+        </div>
+        <div class="hobby-content">
+          <div class="hobby-items">
+            <div class="hobby-text">Playing video games.</div>
+            <img src="images/game1.png" class="about-pic" />
+          </div>
+          <div class="hobby-items">
+            <div class="hobby-text">Trying new recipes.</div>
+            <img src="images/bake1.png" class="about-pic" />
+          </div>
+          <div class="hobby-items">
+            <div class="hobby-text">Travelling.</div>
+            <img src="images/travel1.png" class="about-pic" />
+          </div>
+        </div>
+      </section>
+      <!--create at least three items in this section. Each item should be in a div
+             styled to look like a card, with a bit of shadow around it-->
+      <section id="portfolio">
+        <div class="section-title">Portfolio</div>
+        <div class="section-content">
+          <div class="portfolio-card">
+            <img src="images/Hangman-1.png" class="portfolio-pic" />
+            <div class="portfolio-text">
+              <a
+                class="link"
+                href="https://samueljnel.github.io/My-Hangman-Game-/"
+                >Hangman Game</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img src="images/GrabBag.png" class="portfolio-pic" />
+            <div class="portfolio-text">
+              <a class="link" href="https://samueljnel.github.io/GrabBag/"
+                >GrabBag</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img src="images/Tic-Tac-Toe.png" class="portfolio-pic" />
+            <div class="portfolio-text">
+              <a class="link" href="https://samueljnel.github.io/Tic-Tac-Toe-/"
+                >Tic-Tac-Toe</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Create three fake testimonials from made-up individuals. Find placeholder images for the individuals.
+            Use place holder text for the testimonials-->
+      <section id="testimonials">
+        <div class="section-title">Testimonials</div>
+        <div class="section-content">
+          <div class="testimonial-card">
+            <img src="images/jane.png" class="testimonial-pic" />
+            <div class="testimonial-text">
+              Lorem Ipsum is not simply random text.
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <img src="images/julian.png" class="testimonial-pic" />
+            <div class="testimonial-text">Contrary to popular belief.</div>
+          </div>
+          <div class="testimonial-card">
+            <img src="images/janet.png" class="testimonial-pic" />
+            <div class="testimonial-text">
+              There are many variations of part.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-container">
+          <div class="email">
+            <i class="fas fa-envelope social"></i>
+            <a class="btn" href="mailto:jonelle.samuel@gmail.com">Contact Me</a>
+          </div>
+          <div class="twitter">
+            <i class="fab fa-twitter social"></i>
+            <a class="btn" href="https://twitter.com/Jonelley">Twitter</a>
+          </div>
+        </div>
+        <p>© 2021 Jonelle Samuel</p>
+      </section>
+    </div>
+  </body>
+</html>
